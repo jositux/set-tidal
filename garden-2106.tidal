@@ -1,0 +1,125 @@
+bps 0.4
+
+hush
+
+d1 $ sound "hh*4 piano:3*2 {cp*4} 909*6" 
+|+| gain "1.6"
+|+| vowel "a b 1 a d"
+|+| pan sinewave1
+
+d1 silence
+
+d2 $ striate 1 $ sound "koy*2" |+| gain "1"
+
+d2 silence
+
+d1 $ sound "junglenoisse:5 arpy*4 {cp*2, sitar/4} arpy*2 can*2"
+|+| gain "1"
+|+| vowel " ab c d 2"
+
+hush
+
+d1 silence
+
+d3 $ sound "junglenoisse:5" |+| gain "1"
+
+bps 1.5
+
+d4 sound "darknoise" |+| gain "1"
+
+d4 silence
+
+d2 $ sound "arpy*4 909*4" |+| gain "1.9" |+| vowel "a b i o o a b i c 1"
+#init
+
+d2 silence
+
+hush
+
+d3 silence
+
+d3 $ sound (( density 2 )"sitar:2*2 can*4" )
+|+| vowel ("a b a")
+|+| pan sinewave1
+|+| gain "1.4"
+ # accelerate "0"
+
+ |+| gain "1.5"
+
+d1 silence
+
+hush
+
+d2 $ sound "sn:7*2 arpy*2 hh*2 can:8*1"
+|+| vowel "1 a b 2 c c"
+|+| gain "1.2"
+|+| accelerate "0"
+|+| pan rand
+
+d2 silence
+
+d1 silence
+
+d4 $ sound "[sitar:2*2 sn] [909 pluck*2 sn*2]"
+  # accelerate "0"
+   |+| gain "0.8"
+   |+| vowel "o 1 a 1 1"
+
+#init
+
+d4 silence
+
+
+d3 silence
+
+hush
+
+bps 1.4
+
+d5 $ sound "reel:37" |+| gain "0.7"
+
+d5 silence
+
+#init
+
+d6 $ sound (slow 1 "darknoise") |+| gain "0.2"
+
+hush
+
+d5 silence
+
+d6 $ sound "breakcore" |+| gain ".5" |+| accelerate "0"
+
+d6 silence
+
+d6 $ sound "trent:20/2"
+|+| gain "9"
+|+| accelerate "0"
+
+d6 silence
+
+hush
+
+d6 silence
+
+d8 $ chop 1 $ sound "darknoise:2" |+| gain "3.5"
+
+d8 silence
+
+d6 $ sound "voicenoise:0/2"
+|+| gain "1"
+
+d7 $ sound "koy" |+| gain "10" # accelerate "0"
+
+
+
+cps 4
+
+hush
+
+flick sid can metal future gabba sn mouth co gretsch mt arp h cp
+cr newnotes bass crow hc tabla bass0 hh bass1 bass2 oc bass3 ho
+odx diphone2 house off ht tink perc bd industrial pluck trump
+printshort jazz voodoo birds3 procshort blip drum jvbass psr
+wobble drumtraks koy rave bottle kurt latibro rm sax lighter lt
+arpy feel less stab ul
