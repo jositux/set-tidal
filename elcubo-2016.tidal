@@ -1,0 +1,82 @@
+bps 0.4
+
+d1 $ striate 1 $ sound "koy*2" |+| gain "1"
+
+d2 $ sound "hh*8 auto:8 909*2 cp*2" |+| gain "1" |+| accelerate "-0.5"  
+
+d3 $ sound "sitar:2*2" |+| gain "1" |+| vowel "1 a b o 1 b"
+
+d5 $ sound "junglenoisse*3" |+| vowel "a b c 1"  |+| gain "0.5" |+| accelerate "0"
+
+hush
+
+#fade
+
+d4 $ sound "junglenoisse:5*3" |+| gain "1.4"
+
+
+hush
+
+import Sound.Tidal.MIDI.Output
+
+import Sound.Tidal.VolcaKeys
+
+keyStreams <- midiproxy 1 "CH345 MIDI 1" [(keys, 1)]
+
+[k1] <- sequence keyStreams
+
+# ALEM
+
+bps 1.5
+
+d1 $ sound (slow 1 "darknoise") |+| gain "1.2"
+
+d2 $ sound "{sn*2 can:2 [~ bd] [909*4 guitar:1*2], [hh([23 27]/2,32,2)]/12}" |+| vowel "o 2 a 1 c 1" |+| gain "1.2"
+
+hush
+
+bps 1.45
+
+d2 $ sound "amen2016:14/2" |+| gain "1" |+| vowel "1" |+| accelerate "0"
+
+
+d2 $ sound "amen2016:6/2" |+| gain "1" |+| vowel "1 2 3"
+
+**
+
+d2 $ sound "amen2016:9/2" |+| gain "1.4" |+| vowel "1"
+
+d2 $ sound "amen2016:17/4" |+| gain "1.4" |+| vowel "1"
+
+
+hush
+
+bps 1.43
+
+d8 $ sound "reel:37" |+| gain "1.5"
+
+d6 silence
+
+bps 1.5
+
+d6 $ sound "warp:45" |+| gain "1" |+| accelerate ""
+
+d2 $ sound "amen2016:3/2" |+| gain "1.4" |+| vowel "1"
+
+***
+d2 $ sound "amen2016:30/2" |+| gain "1.6" |+| vowel "1"
+
+***
+
+d2 $ sound "amen2016:27/2" |+| gain "1.6" |+| vowel "1"
+
+d2 $ sound "amen2016:13/3" |+| gain "1.4" |+| vowel "1"
+
+****
+d2 $ sound "amen2016:25/2" |+| gain "1.4" |+| vowel "1"
+
+d2 $ sound "amen2016:35/2" |+| gain "1.6" |+| vowel "1"
+
+
+#Relleno
+d3 $ sound "amen2016:21/2" |+| gain "1.4" |+| vowel "1"
