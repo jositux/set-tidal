@@ -1,0 +1,46 @@
+bps 1
+
+d1 $ sound ( every 1 (density 2)"pluck*8 cp*6 bd*2")
+|+| gain "0"
+
+d1 silence
+
+d1 $ sound ( every 1 ( density 2)"909*4 pluck*4 cp*2" )
+ # accelerate "0"
+ |+| pan sinewave1
+ |+| vowel "a o b o 1"
+ |+| gain "2"
+
+d1 silence
+
+d2 sound "darknoise:1*2"
+|+| gain "2.2"
+
+d2 silence
+
+d3 $ every 4 (striate 4) $ sound "[[pluck*2 gabba:3]*4]"
+|+| gain "1" |+| pan  
+
+d3 silence
+
+d4 $ sound "[sitar:1 cp] [909 casio*8 arpy*2 casio:5*12]"
+  # accelerate ""
+   |+| pan sinewave1
+   |+| shape sinewave1
+   |+| vowel "o 1 tio a o a i"
+   |+| gain "0.2"
+
+d4 silence
+
+hush
+
+
+bps 1.5
+
+d5 $ sound "warp:45" |+| gain "9"
+
+d6 $ sound "breakcore/2" |+| gain "0"
+
+d6 silence
+
+d1 silence
